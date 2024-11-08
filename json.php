@@ -6,7 +6,7 @@ function parseSurveyFile($filename) {
     foreach ($lines as $line) {
         if (empty($line)) continue;
         
-        // Розділяємо рядок по двокрапці для отримання імені параметра і значення
+        // Розділяємо рядок по двокрапці
         list($key, $value) = explode(":", $line, 2);
         
         // Видаляємо зайві пробіли з обох сторін
